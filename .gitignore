@@ -1,4 +1,4 @@
 .idea
 package-lock.json
 node_modules
-cypress/e2e/examples
+cypress/integration/e2e/examples
