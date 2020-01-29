@@ -1,4 +1,5 @@
 {
- "baseUrl":"https://german.net/"
-
+ "baseUrl":"https://german.net/",
+ "pageLoadTimeout":5000,
+ "chromeWebSecurity": false
 }
