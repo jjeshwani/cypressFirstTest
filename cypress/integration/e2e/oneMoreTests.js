@@ -9,7 +9,7 @@ describe('Actions', () => {
         });
         describe('when user selects `Past Perfect Conjugation` in drop down and clicks `Start` button', () => {
             before(() => {
-                cy.get('.choosebox').select('Past Perfect Conjugation');
+                cy.get('[name="tense_id"]').select('Past Perfect Conjugation');
                 cy.get('form > div:nth-child(2) .button').click()
             });
             it('should navigate to `Verbs/conjugation/past-perfect/` form', () => {
