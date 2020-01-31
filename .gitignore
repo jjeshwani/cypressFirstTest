@@ -1,5 +1,5 @@
 .idea
 node_modules
-cypress/integration/e2e/examples
+cypress/integration/examples
 cypress/videos
 cypress/screenshots
