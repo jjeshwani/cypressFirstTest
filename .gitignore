@@ -1,5 +1,4 @@
 .idea
-package-lock.json
 node_modules
 cypress/integration/e2e/examples
 cypress/videos
