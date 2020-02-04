@@ -5,13 +5,16 @@ describe('German.net UI POM improvements', () => {
             cy.visit('reading/');
         });
         it('should verify presence of navigation section', () => {
-            //TODO add assertion for
+            //TODO add assertion for ...
         });
         it('should verify presence of text section', () => {
-            //TODO add assertion for
+            //TODO add assertion for ...
         });
         it('should verify presence of table results section', () => {
-            //TODO add assertion for
+            //TODO add assertion for ...
+        });
+        it('should verify presence of special characters section', () => {
+            //TODO add assertion for ...
         });
     });
 });
