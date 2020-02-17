@@ -1,11 +1,11 @@
 class menuItems {
 
     visit() {
-        cy.visit('/');
+        return '/';
     }
 
     getConjugation() {
-        return cy.get('#top_navigation > [href="verbs/conjugation/"]');
+        return '#top_navigation > [href="verbs/conjugation/"]';
     }
 
 }
