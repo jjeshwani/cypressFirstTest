@@ -1,16 +1,17 @@
 import menuItems from '../../page-objects/homePageMenu/menuItems';
-context('Actions', () => {
+
+describe('First test with POM improvements', () => {
     const menu = new menuItems();
-    beforeEach(() => {
-        menu.visit();
+    const menuConj = new menu.getConjugation();
+
+    describe('Given main page', ()=>{
+        before(()=> {
+            menu.visit()
+        });
+        it('should navigate to `Conjugation` tab', () => {
+            menuConj.click()
+        });
+
     });
 
-    describe('given main page', () => {
-        it('should navigate to `Conjugation` tab', () => {
-            const menu =new menuItems();
-            const menuConj = new menu.getConjugation();
-            menuConj.click()
-            //cy.get('#top_navigation > [href="verbs/conjugation/"]').click()
-        });
-    });
 });
