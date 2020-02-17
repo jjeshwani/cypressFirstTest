@@ -1,13 +1,11 @@
-class menuItems {
+export default class MenuItems {
 
-    visit() {
+    open() {
         return '/';
     }
 
-    getConjugation() {
+    getConjugationTab() {
         return '#top_navigation > [href="verbs/conjugation/"]';
     }
 
 }
-
-export default menuItems;

@@ -1,12 +1,12 @@
-import conjBoxSuiteEle from '../../page-objects/conjuPage/conjBoxSuiteEle';
-import pastPerfectEle from "../../page-objects/pastPerfectPage/pastPerfectEle";
+import ConjBoxSuiteEle from '../../page-objects/conjuPage/ConjBoxSuiteEle';
+import PastPerfectEle from "../../page-objects/pastPerfectPage/PastPerfectEle";
 
 describe('Given Conjugation Page', () => {
-    const conj = new conjBoxSuiteEle();
-    const pastPerfect =  new pastPerfectEle();
+    const conj = new ConjBoxSuiteEle();
+    const pastPerfect =  new PastPerfectEle();
 
     before(() => {
-        cy.visit(conj.visit())
+        cy.visit(conj.open())
     });
 
     describe('when user selects `Past Perfect Conjugation` in drop down and clicks `Start` button', () => {
@@ -23,7 +23,7 @@ describe('Given Conjugation Page', () => {
 
     describe('given `Past Perfect Conjugation` page', () => {
         before( () =>{
-            cy.visit(pastPerfect.visit())
+            cy.visit(pastPerfect.open())
 
         });
         describe('when user clicks on `ß` letter in front of `ich`', () => {

@@ -1,6 +1,6 @@
-class pastPerfectEle {
+class PastPerfectEle {
 
-    visit() {
+    open() {
         return '/verbs/conjugation/past-perfect/';
     }
 
@@ -19,4 +19,4 @@ class pastPerfectEle {
 
 }
 
-export default pastPerfectEle;
+export default PastPerfectEle;

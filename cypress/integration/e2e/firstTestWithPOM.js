@@ -1,15 +1,15 @@
-import menuItems from '../../page-objects/homePageMenu/menuItems';
+import MenuItems from '../../page-objects/homePageMenu/MenuItems';
 
 describe('First test with POM improvements', () => {
-    const menu = new menuItems();
+    const menu = new MenuItems();
 
     describe('Given main page', () => {
         before(() => {
-            cy.visit(menu.visit())
+            cy.visit(menu.open())
         });
 
         it('should navigate to `Conjugation` tab', () => {
-            cy.get(menu.getConjugation()).click()
+            cy.get(menu.getConjugationTab()).click()
         });
 
     });

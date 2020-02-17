@@ -1,5 +1,5 @@
-class conjBoxSuiteEle{
-    visit() {
+class ConjBoxSuiteEle{
+    open() {
         return '/verbs/conjugation/';
     }
 
@@ -12,4 +12,4 @@ class conjBoxSuiteEle{
 
 }
 
-export default conjBoxSuiteEle;
+export default ConjBoxSuiteEle;
