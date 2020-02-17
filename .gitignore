@@ -3,3 +3,7 @@ node_modules
 cypress/integration/examples
 cypress/videos
 cypress/screenshots
+package-lock.json
+cypress/fixtures
+
+
