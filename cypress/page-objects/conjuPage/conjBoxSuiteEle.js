@@ -1,13 +1,13 @@
 class conjBoxSuiteEle{
     visit() {
-        cy.visit('/verbs/conjugation/');
+        return '/verbs/conjugation/';
     }
 
     getDropDown() {
-        return cy.get('[name="tense_id"]')
+        return '[name="tense_id"]';
     }
-    getstartButton(){
-        return cy.get('form > div:nth-child(2) .button')
+    getStartButton(){
+        return 'form > div:nth-child(2) .button';
     }
 
 }
