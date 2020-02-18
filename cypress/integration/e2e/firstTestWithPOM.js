@@ -10,7 +10,6 @@ context('Actions', () => {
             const menu =new menuItems();
             const menuConj = new menu.getConjugation();
             menuConj.click()
-            //cy.get('#top_navigation > [href="verbs/conjugation/"]').click()
         });
     });
 });
