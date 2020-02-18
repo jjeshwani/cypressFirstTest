@@ -3,7 +3,7 @@ import MenuItems from '../../page-objects/homePageMenu/MenuItems';
 describe('First test with POM improvements', () => {
     const menu = new MenuItems();
 
-    describe('Given main page', () => {
+    describe('given main page', () => {
         before(() => {
             cy.visit(menu.open())
         });

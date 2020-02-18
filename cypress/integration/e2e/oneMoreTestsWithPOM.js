@@ -1,18 +1,18 @@
-import ConjBoxSuiteEle from '../../page-objects/conjuPage/ConjBoxSuiteEle';
-import PastPerfectEle from "../../page-objects/pastPerfectPage/PastPerfectEle";
+import ConjBoxSuitePage from '../../page-objects/conjuPage/ConjBoxSuitePage';
+import PastPerfectPage from "../../page-objects/pastPerfectPage/PastPerfectPage";
 
 describe('Given Conjugation Page', () => {
-    const conj = new ConjBoxSuiteEle();
-    const pastPerfect =  new PastPerfectEle();
+    const conjugationBox = new ConjBoxSuitePage();
+    const pastPerfect =  new PastPerfectPage();
 
     before(() => {
-        cy.visit(conj.open())
+        cy.visit(conjugationBox.open())
     });
 
     describe('when user selects `Past Perfect Conjugation` in drop down and clicks `Start` button', () => {
         before(() => {
-            cy.get(conj.getDropDown()).select('Past Perfect Conjugation')
-            cy.get(conj.getStartButton()).click()
+            cy.get(conjugationBox.getDropDown()).select('Past Perfect Conjugation')
+            cy.get(conjugationBox.getStartButton()).click()
         });
         it('should navigate to `Verbs/conjugation/past-perfect/` form', () => {
             cy.url().should('include', 'past-perfect');

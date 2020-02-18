@@ -1,4 +1,4 @@
-class PastPerfectEle {
+export default class PastPerfectPage {
 
     open() {
         return '/verbs/conjugation/past-perfect/';
@@ -19,4 +19,3 @@ class PastPerfectEle {
 
 }
 
-export default PastPerfectEle;
