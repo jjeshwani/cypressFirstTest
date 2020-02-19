@@ -1,4 +1,5 @@
-export default class ConjBoxSuitePage{
+export class ConjBoxSuitePage {
+
     open() {
         return '/verbs/conjugation/';
     }
@@ -6,8 +7,8 @@ export default class ConjBoxSuitePage{
     getDropDown() {
         return '[name="tense_id"]';
     }
-    getStartButton(){
+
+    getStartButton() {
         return 'form > div:nth-child(2) .button';
     }
-
 }

@@ -1,9 +1,9 @@
-import ConjBoxSuitePage from '../../page-objects/conjuPage/ConjBoxSuitePage';
-import PastPerfectPage from "../../page-objects/pastPerfectPage/PastPerfectPage";
+import {ConjBoxSuitePage} from '../../page-objects/conjuPage/ConjBoxSuitePage';
+import {PastPerfectPage} from "../../page-objects/pastPerfectPage/PastPerfectPage";
 
-describe('Given Conjugation Page', () => {
+describe('given `Conjugation` page', () => {
     const conjugationBox = new ConjBoxSuitePage();
-    const pastPerfect =  new PastPerfectPage();
+    const pastPerfect = new PastPerfectPage();
 
     before(() => {
         cy.visit(conjugationBox.open())
@@ -11,7 +11,7 @@ describe('Given Conjugation Page', () => {
 
     describe('when user selects `Past Perfect Conjugation` in drop down and clicks `Start` button', () => {
         before(() => {
-            cy.get(conjugationBox.getDropDown()).select('Past Perfect Conjugation')
+            cy.get(conjugationBox.getDropDown()).select('Past Perfect Conjugation');
             cy.get(conjugationBox.getStartButton()).click()
         });
         it('should navigate to `Verbs/conjugation/past-perfect/` form', () => {
@@ -22,18 +22,18 @@ describe('Given Conjugation Page', () => {
 
 
     describe('given `Past Perfect Conjugation` page', () => {
-        before( () =>{
+        before(() => {
             cy.visit(pastPerfect.open())
 
         });
         describe('when user clicks on `ß` letter in front of `ich`', () => {
-            before( () =>{
+            before(() => {
 
-                cy.get(pastPerfect.getSpecial1()).click()
+                cy.get(pastPerfect.getSpecialSymbolWithNumber(1)).click()
             });
             it('should display `ß` letter inside input filed', () => {
 
-                cy.get(pastPerfect.getInput1()).should('have.value', 'ß')
+                cy.get(pastPerfect.getInputFieldNumber(1)).should('have.value', 'ß')
             });
         });
     });

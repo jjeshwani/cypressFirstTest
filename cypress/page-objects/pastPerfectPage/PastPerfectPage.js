@@ -1,4 +1,4 @@
-export default class PastPerfectPage {
+export class PastPerfectPage {
 
     open() {
         return '/verbs/conjugation/past-perfect/';
@@ -8,14 +8,12 @@ export default class PastPerfectPage {
         return '#content h1';
     }
 
-    getSpecial1() {
-        return '[onclick="add_special1(\'ß\')"]';
+    getSpecialSymbolWithNumber(specialSymbolNumber) {
+        return `[onclick="add_special${specialSymbolNumber}(\'ß\')"]`;
     }
 
-    getInput1() {
-     return '[name*="input1"]'
+    getInputFieldNumber(inputFieldNumber) {
+        return `[name*="input${inputFieldNumber}"]`
     }
-
-
 }
 
