@@ -1,4 +1,4 @@
-import MenuItems from '../../page-objects/homePageMenu/MenuItems';
+import {MenuItems} from '../../page-objects/homePageMenu/MenuItems';
 
 describe('First test with POM improvements', () => {
     const menu = new MenuItems();

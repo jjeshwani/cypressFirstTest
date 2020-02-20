@@ -1,4 +1,4 @@
-export default class MenuItems {
+export class MenuItems {
 
     open() {
         return '/';
@@ -7,5 +7,4 @@ export default class MenuItems {
     getConjugationTab() {
         return '#top_navigation > [href="verbs/conjugation/"]';
     }
-
 }
