@@ -3,7 +3,7 @@ context('/verbs/conjugation/', () => {
         cy.visit('/')
     });
 
-    describe('given `Conjugation` page', () => {
+    describe('Given `Conjugation` page', () => {
         before( () =>{
             //TODO add action to navigate to the `Conjugation` page
         });

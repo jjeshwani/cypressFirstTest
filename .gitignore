@@ -1,4 +1,9 @@
 .idea
-package-lock.json
 node_modules
-cypress/integration/e2e/examples
+cypress/integration/examples
+cypress/videos
+cypress/screenshots
+package-lock.json
+cypress/fixtures
+
+
