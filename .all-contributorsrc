@@ -1,0 +1,29 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "jjeshwan",
+      "name": "jjeshwan",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/26704338?v=4",
+      "profile": "https://github.com/jjeshwan",
+      "contributions": [
+        "code",
+        "content",
+        "bug",
+        "design",
+        "ideas",
+        "tutorial"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "cypressFirstTest",
+  "projectOwner": "jjeshwani",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
